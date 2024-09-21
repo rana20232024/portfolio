@@ -1,0 +1,804 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "poppins", "sans-serif", "Helvetica";
+}
+body{
+    color: white;
+    background-color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+header .container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+    background-color: black;
+}
+
+header .container nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 70px;
+    width: 100%;
+}
+header .container nav ul li a{
+    color: white;
+    font-size: 25px;
+    font-weight: 500px;
+    transition: 0.1s linear;
+}
+header .container nav ul li a:hover{
+    color: rgb(11, 11, 167);
+}
+header .container nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color:rgb(11, 11, 167);
+    display: block;
+    transition: 0.3s linear;
+
+}
+header .container nav ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+
+/* header end */
+
+
+section {
+    width: 100%;
+    margin-bottom: 100px;
+    /* padding: 20px 10%; */
+}
+
+section .container {
+    width: 100%;
+    margin: auto;
+    padding: 20px 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+section .container .text h3{
+    font-size: 27px;
+    margin: 20px 0;
+}
+section .container .text h1{
+    font-size: 40px;
+    margin: 20px 0;
+    color: rgb(11, 11, 167);
+}
+section .container .text p{
+    font-size: 22px;
+    margin: 20px 0;
+    line-height: 35px;
+}
+section .container .text .social{
+    margin: 30px 0 30px ;
+}
+section .container .text .social a {
+    margin: 10px 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+section .container .text .social .facebook{
+    transition: 0.3s;
+}
+section .container .text .social .facebook:hover {
+    font-size: 40px;
+    color: rgb(11, 11, 167);
+}
+
+section .container .text .social .linkedin {
+    transition: 0.3s;
+}
+section .container .text .social .linkedin:hover {
+    font-size: 40px;
+    color: rgb(10, 102, 194);
+}
+
+section .container .text .social .instagram{
+    transition: 0.3s;
+}
+section .container .text .social .instagram:hover {
+    font-size: 40px;
+    color: rgb(195, 42, 163);
+}
+
+section .container .text .social .github{
+    transition: 0.3s;
+}
+section .container .text .social .github:hover {
+    font-size: 40px;
+    color: #323946;
+}
+section .container .text .social .twitter{
+    transition: 0.3s;
+}
+section .container .text .social .twitter:hover {
+    font-size: 40px;
+    color: rgb(29, 161, 242);
+}
+section .container .text .btn-down {
+    background-color: rgb(11, 11, 167);
+    display: flex;
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 50px;
+    transition: 0.3s;
+}
+section .container .text .btn-down a{
+    color: white;
+}
+section .container .text .btn-down:hover {
+    background-color: rgb(5, 5, 86);
+}
+
+section .container .box {
+    width: 900px;
+    height: 450px;
+    margin: 120px auto 100px;
+    border-radius: 50%;
+    position: relative;
+
+
+}
+
+section .container .box::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+    background: linear-gradient( white, rgb(11, 11, 167)) ;
+    background-size: 50%;
+    z-index: -1;
+    filter: blur(150px);
+}
+
+section .container .box .img_div img{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+ /* border: 5px solid rgba(231, 231, 231, 0.468); */
+    /* border-radius: 50%; */
+}
+
+
+
+main .container{
+    width: 100%;
+    margin: auto;
+    padding: 20px 10%;
+
+}
+#About , #Skill , #Contact{
+    padding: 4rem 0;
+    background-image: url(image.png);
+}
+#About h1{
+    text-align: center;
+    /* color: rgb(11, 11, 167); */
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#About hr{
+    width: 100px;
+    height: 3px;
+    margin: 5px auto 0;
+    background-color: rgb(11, 11, 167); 
+    border: none;    
+}
+
+#About .about_content{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 3rem;
+
+
+}
+#About .about_content .col1 h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#About .about_content .col1 h3 span{
+    color: rgb(11, 11, 167);
+}
+#About .about_content .col1 p{
+    line-height: 27px;
+    margin-bottom: 20px;
+    font-size: 20px;
+
+}
+#About .about_content .col2 p{
+    border-bottom: 2px solid rgb(11, 11, 167);
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+}
+
+
+
+/* about end */
+#Skill .skills-content{
+    margin-top: 2rem;
+    background-color: rgb(3, 3, 84);
+    border-radius: 10px;
+    /* height: 23rem; */
+}
+#Skill h1{
+    text-align: center;
+    
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#Skill h1 span {
+    color: rgb(11, 11, 167);
+}
+#Skill hr{
+    width: 100px;
+    height: 3px;
+    margin: 5px auto 0;
+    background-color: rgb(11, 11, 167); 
+    border: none;    
+}
+#Skill .container{
+    width: 100%;
+    margin: auto;
+    padding: 20px 10%;
+
+}
+#Skill .row img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+#Skill .skills-content .row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 3rem;
+    align-items:center;
+    text-align: center;
+}
+#Skill .skills-content .row .item{
+    color: white;
+    background-color: black;
+    margin: 20px;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#Skill .skills-content .row .item:hover{
+    filter: drop-shadow(10px 10px 10px rgb(11, 11, 167)) ;
+}
+
+
+
+
+/* skills end */
+#Contact h1{
+    text-align: center;
+    
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#Contact h1 span {
+    color: rgb(11, 11, 167);
+}
+#Contact hr{
+    width: 100px;
+    height: 3px;
+    margin: 5px auto 0;
+    background-color: rgb(11, 11, 167); 
+    border: none;    
+}
+#Contact .container{
+    width: 100%;
+    margin: auto;
+    padding: 20px 10%;
+}
+#Contact .row{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    background-color: white;
+    box-shadow: 3px 3px 20px rgb(230, 217, 217);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    column-gap: 20px;
+}
+
+#Contact .row input , #Contact .row textarea{
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgb(170, 207, 255);
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid white;
+    border-radius: 10px;
+    outline-color: rgb(11, 11, 167);
+    
+}
+#Contact .row .btn{
+    width: 10rem;
+    height: 50px;
+    padding: 10px;
+    background-color: rgb(11, 11, 167);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+#Contact .row .btn:hover{
+    background-color: rgb(5, 5, 86);
+
+}
+
+
+
+
+
+
+/* contact end */
+footer{
+    text-align: center;
+    background-color: rgb(3, 3, 84);
+    padding: 20px;
+    
+}
+
+
+/* footer end */
+
+/* Design for scollbar */
+::-webkit-scrollbar {
+    width: 14px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:  rgb(12, 93, 200);
+    border-radius: 15px;
+}
+
+/* Responsive big screen */
+@media (max-width: 992px){
+    header .container, section .container , main .container , #Skill .container , #Contact .container {
+        padding: 15px 6%;
+    }
+
+    header .logo img{
+        max-width: 180px;
+    }
+    header .container nav ul{
+        margin: 0 40px;
+    }
+
+    header .container nav ul li a{
+        font-size: 21px;
+        
+    }
+
+    section .container .text{
+        width: 100%;
+        margin-top: 100px;
+    }
+    section .container .text h3{
+        font-size: 22px;
+        margin: 15px 0;
+    }
+    section .container .text h1{
+        font-size: 35px;
+        margin: 15px 0;
+    }
+    section .container .text p{
+        font-size: 18px;
+        margin: 15px 0;
+        line-height: 30px;
+    }
+    section .container .text .social{
+        margin: 20px 0 20px 0 ;
+    }
+    section .container .text .social a {
+        margin: 10px 10px;
+        font-size: 20px;
+    }
+    section .container .text .btn-down {
+        width: 250px;
+        height: 50px;
+        padding: 10px 0;
+        margin-top: 35px;
+    }
+    section .container .box {
+        width: 470px;
+        height: 250px;
+        margin: auto ;
+    }
+    section .container .box .img_div img{
+        margin: auto;
+    }
+    #About , #Skill , #Contact{
+        padding: 2rem 0;
+    }
+    #About .about_content{
+        margin-top: 2rem;
+        grid-template-columns: 2fr 1fr;
+        row-gap: 1rem;
+    
+    }
+    #About h1 , #Skill h1 , #Contact h1{
+        font-size: 27px;
+    }
+    #About hr , #Skill hr ,#Contact hr{
+        width: 100px;
+        height: 3px;
+        margin: 6px auto 0;   
+    }
+    #About .about_content .col1 h3{
+        font-size: 27px;
+        margin-bottom: 12px;
+    }
+    #About .about_content .col1 p{
+        line-height: 28px;
+        margin-bottom: 15px;
+        font-size: 18px;
+    
+    }
+    #Skill .skills-content .row{
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 2rem;
+    }
+    #Skill .row img{
+        width: 45px;
+        height: 45px;
+        margin-bottom: 7px;
+    }
+    #Skill .skills-content .row .item{
+        margin: 15px;
+        font-size: 14px;
+    }
+    #Contact .row{
+        grid-template-columns: 2fr 1fr;
+        padding: 1rem 2rem;
+        /* row-gap: 20px; */
+    }
+    #Contact .row input , #Contact .row textarea{
+        margin: 15px 0;
+        padding: 8px;
+        font-size: 14px;
+        
+    }
+    #Contact .row .btn{
+        width: 8rem;
+        height: 40px;
+        padding: 7px;
+        font-size: 15px;
+    }
+    #Contact .row img{
+        max-width: 340px;
+        margin: auto;
+    }
+
+}
+/* Responsive Tablet */
+@media (max-width : 768px){
+    header .container {
+        padding: 15px 0;
+        flex-direction: column;
+    }
+    section .container {
+        padding: 15px 7%;
+        flex-direction: column;
+    }
+    section .container , main .container , #Skill .container , #Contact .container{
+        padding: 15px 7%;
+    }
+    header .logo img{
+        max-width: 100px;
+        margin: auto;
+    }
+    header .container nav ul{
+        margin: 0 auto;
+    }
+    header .container nav ul li{
+        margin: 0 15px;
+    }
+
+    header .container nav ul li a{
+        font-size: 20px;
+    }
+    section{
+        margin-bottom: 100px;
+        padding: 20px 7% 80;
+    }
+    section .container .text h3{
+        font-size: 20px;
+        margin: 15px 0;
+    }
+    section .container .text h1{
+        font-size: 30px;
+        margin: 15px 0;
+    }
+    section .container .text p{
+        font-size: 18px;
+        margin: 15px 0;
+        line-height: 30px;
+    }
+    section .container .text .social{
+        margin: 20px 0 20px ;
+    }
+    section .container .text .social a {
+        margin: 10px 12px;
+        font-size: 20px;
+    }
+    section .container .text .btn-down {
+        width: 200px;
+        height: 50px;
+        padding: 10px;
+        margin-top: 35px;
+    }
+    section .container .box {
+        width: 445px;
+        height: 350px;
+        margin: auto ;
+    }
+    section .container .box .img_div img{
+        margin: auto;
+    }
+
+    #About , #Skill , #Contact{
+        padding: 2rem 0;
+    }
+    #About .about_content{
+        margin-top: 2rem;
+        grid-template-columns: 2fr;
+        padding: 20px;
+        row-gap: 2rem;
+    
+    }
+    #About h1 , #Skill h1 , #Contact h1{
+        font-size: 25px;
+    }
+    #About hr , #Skill hr ,#Contact hr{
+        width: 100px;
+        height: 2px;
+        margin: 6px auto 0;   
+    }
+    #About .about_content .col1 h3{
+        font-size: 25px;
+        margin-bottom: 12px;
+    }
+    #About .about_content .col1 p{
+        line-height: 22px;
+        margin-bottom: 15px;
+        font-size: 16px;
+    
+    }
+    #Skill .skills-content .row{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 2rem;
+    }
+    #Skill .row img{
+        width: 45px;
+        height: 45px;
+        margin-bottom: 7px;
+    }
+    #Skill .skills-content .row .item{
+        margin: 15px;
+        font-size: 14px;
+    }
+    #Contact .row{
+        grid-template-columns: 1fr;
+        padding: 1rem 2rem;
+        row-gap: 20px;
+    }
+    #Contact .row input , #Contact .row textarea{
+        margin: 15px 0;
+        padding: 8px;
+        font-size: 13px;
+        
+    }
+    #Contact .row .btn{
+        width: 7rem;
+        height: 40px;
+        padding: 7px;
+        font-size: 15px;
+        margin: auto;
+    }
+    #Contact .row img{
+        max-width: 350px;
+        margin: auto;
+    }
+
+
+
+}
+@media (max-width: 480px){
+    header .container {
+        padding: 10px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    section .container {
+        padding: 10px 5%;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    section .container , main .container , #Skill .container , #Contact .container{
+        padding: 15px 5%;
+        align-items: center;
+    }
+    header .logo img{
+        max-width: 80px;
+        margin: auto;
+    }
+    header .container nav ul{
+        margin: 0 auto;
+    }
+    header .container nav ul li{
+        margin: 0 12px;
+    }
+
+    header .container nav ul li a{
+        font-size: 17px;
+    }
+    section{
+        margin-bottom: 100px;
+        padding: 30px 5% 50px;
+    }
+    section .container .text h3{
+        font-size: 18px;
+        margin: 10px 0;
+        align-items: center;
+    }
+    section .container .text h1{
+        font-size: 27px;
+        margin: 15px 0;
+        align-items: center;
+    }
+    section .container .text p{
+        font-size: 15px;
+        margin: 12px 0;
+        line-height: 28px;
+        align-items: center;
+    }
+    section .container .text .social{
+        margin: 18px 0 18px 0 ;
+        align-items: center;
+    }
+    section .container .text .social a {
+        margin: 10px 10px;
+        font-size: 18px;
+    }
+    section .container .text .btn-down {
+        width: 190px;
+        height: 50px;
+        padding: 10px;
+        margin-top: 30px auto;
+        align-items: center;
+    }
+    section .container .box {
+        width: 300px;
+        height: 250px;
+        margin: auto ;
+        align-items: center;
+    }
+    section .container .box .img_div img{
+        margin: auto;
+        align-items: center;
+        max-width: 300px;
+    }
+
+    #About , #Skill , #Contact{
+        padding: 2rem 0;
+        align-items: center;
+    }
+    #About .about_content{
+        margin-top: 2rem;
+        grid-template-columns: 2fr;
+        padding: 20px;
+        row-gap: 1rem;
+        align-items: center;
+    
+    }
+    #About h1 , #Skill h1 , #Contact h1{
+        font-size: 23px;
+    }
+    #About hr , #Skill hr ,#Contact hr{
+        width: 100px;
+        height: 2px;
+        margin: 6px auto 0;   
+    }
+    #About .about_content .col1 h3{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    #About .about_content .col1 p{
+        line-height: 20px;
+        margin-bottom: 13px;
+        font-size: 14px;
+    
+    }
+    #Skill .skills-content .row{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 1rem;
+        align-items: center;
+    }
+    #Skill .row img{
+        width: 45px;
+        height: 45px;
+        margin-bottom: 7px;
+    }
+    #Skill .skills-content .row .item{
+        margin: 13px;
+        font-size: 12px;
+    }
+    #Contact .row{
+        grid-template-columns: 1fr;
+        padding: 1rem 2rem;
+        row-gap: 15px;
+        align-items: center;
+    }
+    #Contact .row input , #Contact .row textarea{
+        margin: 13px 0;
+        padding: 8px;
+        font-size: 10px;
+        
+    }
+    #Contact .row .btn{
+        width: 7rem;
+        height: 40px;
+        padding: 7px;
+        font-size: 13px;
+        margin: auto;
+    }
+    #Contact .row img{
+        max-width: 300px;
+        margin: auto;
+    }
+
+
+}
